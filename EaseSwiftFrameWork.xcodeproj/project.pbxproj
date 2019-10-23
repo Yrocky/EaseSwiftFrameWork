@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,31 @@
 		5C1A7A1422DF097200C1C5B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1A7A1322DF097200C1C5B9 /* Assets.xcassets */; };
 		5C1A7A1722DF097200C1C5B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1A7A1522DF097200C1C5B9 /* LaunchScreen.storyboard */; };
 		5C1A7A2222DF097200C1C5B9 /* EaseSwiftFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A7A2122DF097200C1C5B9 /* EaseSwiftFrameWorkTests.swift */; };
+		5C1A7A2D22DF0A4900C1C5B9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A7A2C22DF0A4900C1C5B9 /* BaseViewController.swift */; };
+		5C1A7A2F22DF0A6900C1C5B9 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A7A2E22DF0A6900C1C5B9 /* BaseTableViewController.swift */; };
+		5C2E487A22E54CFC00B3FBA3 /* EaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E487922E54CFC00B3FBA3 /* EaseCommand.swift */; };
+		5C2E487C22E5844700B3FBA3 /* XXXFansListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E487B22E5844700B3FBA3 /* XXXFansListViewController.swift */; };
+		5C2E487E22E5B18100B3FBA3 /* XXXDouBanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E487D22E5B18100B3FBA3 /* XXXDouBanAPI.swift */; };
+		5C2E488022E5BC5200B3FBA3 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E487F22E5BC5200B3FBA3 /* NetworkAdapter.swift */; };
+		5C2E488222E69CE100B3FBA3 /* XXXMakeFriendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E488122E69CE100B3FBA3 /* XXXMakeFriendAPI.swift */; };
+		5C2E488422E6A7F000B3FBA3 /* EaseUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E488322E6A7F000B3FBA3 /* EaseUserDefault.swift */; };
+		5C2E488622E6CF4400B3FBA3 /* XXXMakeFriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E488522E6CF4400B3FBA3 /* XXXMakeFriendModel.swift */; };
+		5C2E48A322E8775500B3FBA3 /* PullToRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E48A222E8775500B3FBA3 /* PullToRefresh+Rx.swift */; };
+		5C3C492722DF2DBE001776DF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3C492622DF2DBE001776DF /* Alamofire.framework */; };
+		5C3C492922DF2DBE001776DF /* EasyAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3C492822DF2DBE001776DF /* EasyAnimation.framework */; };
+		5C3C492B22DF2DBE001776DF /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3C492A22DF2DBE001776DF /* HandyJSON.framework */; };
+		5C3C492D22DF2DBE001776DF /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3C492C22DF2DBE001776DF /* Moya.framework */; };
+		5C3C493122DF2DBE001776DF /* PullToRefreshKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3C493022DF2DBE001776DF /* PullToRefreshKit.framework */; };
+		5C3C493322DF2DBE001776DF /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3C493222DF2DBE001776DF /* Result.framework */; };
+		5C3C493522DF2DBE001776DF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3C493422DF2DBE001776DF /* RxSwift.framework */; };
+		5C3C493722DF2DBE001776DF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3C493622DF2DBE001776DF /* SnapKit.framework */; };
+		5C3C493922DF2DBE001776DF /* Then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3C493822DF2DBE001776DF /* Then.framework */; };
+		5C3C494B22E09105001776DF /* EaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C494A22E09105001776DF /* EaseNavigationController.swift */; };
+		5CE0838E22E9940900497103 /* XXXCollectionKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE0838D22E9940900497103 /* XXXCollectionKitViewController.swift */; };
+		5CE083A522EEC94700497103 /* XXXReactorKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE083A422EEC94700497103 /* XXXReactorKitViewController.swift */; };
+		5CE083A822EED7F200497103 /* XXXViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE083A722EED7F200497103 /* XXXViewReactor.swift */; };
+		890909C80C6A89C8B5A89B30 /* Pods_EaseSwiftFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F46890D7A4D4F8F28C6A205 /* Pods_EaseSwiftFrameWork.framework */; };
+		D299DD55ABBFFB9E684A6E0C /* Pods_EaseSwiftFrameWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB89F6B1B5B72EC683F56A32 /* Pods_EaseSwiftFrameWorkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06032D7EA07F242FE5D11AF5 /* Pods-EaseSwiftFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseSwiftFrameWork.debug.xcconfig"; path = "Target Support Files/Pods-EaseSwiftFrameWork/Pods-EaseSwiftFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
+		2F46890D7A4D4F8F28C6A205 /* Pods_EaseSwiftFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EaseSwiftFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1A7A0922DF097000C1C5B9 /* EaseSwiftFrameWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaseSwiftFrameWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1A7A0C22DF097000C1C5B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C1A7A0E22DF097000C1C5B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +63,33 @@
 		5C1A7A1D22DF097200C1C5B9 /* EaseSwiftFrameWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EaseSwiftFrameWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1A7A2122DF097200C1C5B9 /* EaseSwiftFrameWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseSwiftFrameWorkTests.swift; sourceTree = "<group>"; };
 		5C1A7A2322DF097200C1C5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1A7A2C22DF0A4900C1C5B9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5C1A7A2E22DF0A6900C1C5B9 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		5C2E487922E54CFC00B3FBA3 /* EaseCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseCommand.swift; sourceTree = "<group>"; };
+		5C2E487B22E5844700B3FBA3 /* XXXFansListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXFansListViewController.swift; sourceTree = "<group>"; };
+		5C2E487D22E5B18100B3FBA3 /* XXXDouBanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXDouBanAPI.swift; sourceTree = "<group>"; };
+		5C2E487F22E5BC5200B3FBA3 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
+		5C2E488122E69CE100B3FBA3 /* XXXMakeFriendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXMakeFriendAPI.swift; sourceTree = "<group>"; };
+		5C2E488322E6A7F000B3FBA3 /* EaseUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseUserDefault.swift; sourceTree = "<group>"; };
+		5C2E488522E6CF4400B3FBA3 /* XXXMakeFriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXMakeFriendModel.swift; sourceTree = "<group>"; };
+		5C2E48A222E8775500B3FBA3 /* PullToRefresh+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PullToRefresh+Rx.swift"; sourceTree = "<group>"; };
+		5C3C492622DF2DBE001776DF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C492822DF2DBE001776DF /* EasyAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C492A22DF2DBE001776DF /* HandyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HandyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C492C22DF2DBE001776DF /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C493022DF2DBE001776DF /* PullToRefreshKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PullToRefreshKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C493222DF2DBE001776DF /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C493422DF2DBE001776DF /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C493622DF2DBE001776DF /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C493822DF2DBE001776DF /* Then.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Then.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C494A22E09105001776DF /* EaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseNavigationController.swift; sourceTree = "<group>"; };
+		5CE0838D22E9940900497103 /* XXXCollectionKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXCollectionKitViewController.swift; sourceTree = "<group>"; };
+		5CE083A422EEC94700497103 /* XXXReactorKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXReactorKitViewController.swift; sourceTree = "<group>"; };
+		5CE083A722EED7F200497103 /* XXXViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXViewReactor.swift; sourceTree = "<group>"; };
+		6EAF2C5191A691D32E4ABDC0 /* Pods-EaseSwiftFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseSwiftFrameWork.release.xcconfig"; path = "Target Support Files/Pods-EaseSwiftFrameWork/Pods-EaseSwiftFrameWork.release.xcconfig"; sourceTree = "<group>"; };
+		7DAF0EC77F2DB2E178129D73 /* Pods-EaseSwiftFrameWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseSwiftFrameWorkTests.release.xcconfig"; path = "Target Support Files/Pods-EaseSwiftFrameWorkTests/Pods-EaseSwiftFrameWorkTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA4B27299AD7FA8DC1485BDD /* Pods-EaseSwiftFrameWorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseSwiftFrameWorkTests.debug.xcconfig"; path = "Target Support Files/Pods-EaseSwiftFrameWorkTests/Pods-EaseSwiftFrameWorkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB89F6B1B5B72EC683F56A32 /* Pods_EaseSwiftFrameWorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EaseSwiftFrameWorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +97,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3C492722DF2DBE001776DF /* Alamofire.framework in Frameworks */,
+				5C3C492922DF2DBE001776DF /* EasyAnimation.framework in Frameworks */,
+				5C3C492B22DF2DBE001776DF /* HandyJSON.framework in Frameworks */,
+				5C3C492D22DF2DBE001776DF /* Moya.framework in Frameworks */,
+				5C3C493122DF2DBE001776DF /* PullToRefreshKit.framework in Frameworks */,
+				5C3C493322DF2DBE001776DF /* Result.framework in Frameworks */,
+				5C3C493522DF2DBE001776DF /* RxSwift.framework in Frameworks */,
+				5C3C493722DF2DBE001776DF /* SnapKit.framework in Frameworks */,
+				5C3C493922DF2DBE001776DF /* Then.framework in Frameworks */,
+				890909C80C6A89C8B5A89B30 /* Pods_EaseSwiftFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D299DD55ABBFFB9E684A6E0C /* Pods_EaseSwiftFrameWorkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +127,8 @@
 				5C1A7A0B22DF097000C1C5B9 /* EaseSwiftFrameWork */,
 				5C1A7A2022DF097200C1C5B9 /* EaseSwiftFrameWorkTests */,
 				5C1A7A0A22DF097000C1C5B9 /* Products */,
+				60ED8FF783C02A1057FBAB8F /* Pods */,
+				C5A24606953361F974C39BC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +146,10 @@
 			children = (
 				5C1A7A0C22DF097000C1C5B9 /* AppDelegate.swift */,
 				5C1A7A0E22DF097000C1C5B9 /* ViewController.swift */,
+				5CE083A622EED7B700497103 /* XXXReactorKit */,
+				5CE083A322EEC5EA00497103 /* XXXCollectionKit */,
+				5CE083A222EEC5D200497103 /* XXXMoya */,
+				5C1A7A3022DF0A7500C1C5B9 /* base */,
 				5C1A7A1022DF097000C1C5B9 /* Main.storyboard */,
 				5C1A7A1322DF097200C1C5B9 /* Assets.xcassets */,
 				5C1A7A1522DF097200C1C5B9 /* LaunchScreen.storyboard */,
@@ -96,6 +167,77 @@
 			path = EaseSwiftFrameWorkTests;
 			sourceTree = "<group>";
 		};
+		5C1A7A3022DF0A7500C1C5B9 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				5C1A7A2C22DF0A4900C1C5B9 /* BaseViewController.swift */,
+				5C1A7A2E22DF0A6900C1C5B9 /* BaseTableViewController.swift */,
+				5C2E48A222E8775500B3FBA3 /* PullToRefresh+Rx.swift */,
+				5C3C494A22E09105001776DF /* EaseNavigationController.swift */,
+				5C2E487922E54CFC00B3FBA3 /* EaseCommand.swift */,
+				5C2E488322E6A7F000B3FBA3 /* EaseUserDefault.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		5CE083A222EEC5D200497103 /* XXXMoya */ = {
+			isa = PBXGroup;
+			children = (
+				5C2E487B22E5844700B3FBA3 /* XXXFansListViewController.swift */,
+				5C2E487D22E5B18100B3FBA3 /* XXXDouBanAPI.swift */,
+				5C2E488522E6CF4400B3FBA3 /* XXXMakeFriendModel.swift */,
+				5C2E488122E69CE100B3FBA3 /* XXXMakeFriendAPI.swift */,
+				5C2E487F22E5BC5200B3FBA3 /* NetworkAdapter.swift */,
+			);
+			path = XXXMoya;
+			sourceTree = "<group>";
+		};
+		5CE083A322EEC5EA00497103 /* XXXCollectionKit */ = {
+			isa = PBXGroup;
+			children = (
+				5CE0838D22E9940900497103 /* XXXCollectionKitViewController.swift */,
+			);
+			path = XXXCollectionKit;
+			sourceTree = "<group>";
+		};
+		5CE083A622EED7B700497103 /* XXXReactorKit */ = {
+			isa = PBXGroup;
+			children = (
+				5CE083A422EEC94700497103 /* XXXReactorKitViewController.swift */,
+				5CE083A722EED7F200497103 /* XXXViewReactor.swift */,
+			);
+			path = XXXReactorKit;
+			sourceTree = "<group>";
+		};
+		60ED8FF783C02A1057FBAB8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06032D7EA07F242FE5D11AF5 /* Pods-EaseSwiftFrameWork.debug.xcconfig */,
+				6EAF2C5191A691D32E4ABDC0 /* Pods-EaseSwiftFrameWork.release.xcconfig */,
+				AA4B27299AD7FA8DC1485BDD /* Pods-EaseSwiftFrameWorkTests.debug.xcconfig */,
+				7DAF0EC77F2DB2E178129D73 /* Pods-EaseSwiftFrameWorkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5A24606953361F974C39BC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C492622DF2DBE001776DF /* Alamofire.framework */,
+				5C3C492822DF2DBE001776DF /* EasyAnimation.framework */,
+				5C3C492A22DF2DBE001776DF /* HandyJSON.framework */,
+				5C3C492C22DF2DBE001776DF /* Moya.framework */,
+				5C3C493022DF2DBE001776DF /* PullToRefreshKit.framework */,
+				5C3C493222DF2DBE001776DF /* Result.framework */,
+				5C3C493422DF2DBE001776DF /* RxSwift.framework */,
+				5C3C493622DF2DBE001776DF /* SnapKit.framework */,
+				5C3C493822DF2DBE001776DF /* Then.framework */,
+				2F46890D7A4D4F8F28C6A205 /* Pods_EaseSwiftFrameWork.framework */,
+				CB89F6B1B5B72EC683F56A32 /* Pods_EaseSwiftFrameWorkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C1A7A2622DF097200C1C5B9 /* Build configuration list for PBXNativeTarget "EaseSwiftFrameWork" */;
 			buildPhases = (
+				BD83A298AFFAFC8453D817A7 /* [CP] Check Pods Manifest.lock */,
 				5C1A7A0522DF097000C1C5B9 /* Sources */,
 				5C1A7A0622DF097000C1C5B9 /* Frameworks */,
 				5C1A7A0722DF097000C1C5B9 /* Resources */,
+				206EF4D26E465A4A1138A418 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C1A7A2922DF097200C1C5B9 /* Build configuration list for PBXNativeTarget "EaseSwiftFrameWorkTests" */;
 			buildPhases = (
+				38F08C9D5C3DE5C3E30BED2C /* [CP] Check Pods Manifest.lock */,
 				5C1A7A1922DF097200C1C5B9 /* Sources */,
 				5C1A7A1A22DF097200C1C5B9 /* Frameworks */,
 				5C1A7A1B22DF097200C1C5B9 /* Resources */,
@@ -192,13 +337,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		206EF4D26E465A4A1138A418 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EaseSwiftFrameWork/Pods-EaseSwiftFrameWork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EaseSwiftFrameWork/Pods-EaseSwiftFrameWork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EaseSwiftFrameWork/Pods-EaseSwiftFrameWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38F08C9D5C3DE5C3E30BED2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EaseSwiftFrameWorkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD83A298AFFAFC8453D817A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EaseSwiftFrameWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C1A7A0522DF097000C1C5B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2E487E22E5B18100B3FBA3 /* XXXDouBanAPI.swift in Sources */,
+				5C2E48A322E8775500B3FBA3 /* PullToRefresh+Rx.swift in Sources */,
+				5CE083A822EED7F200497103 /* XXXViewReactor.swift in Sources */,
+				5C2E488222E69CE100B3FBA3 /* XXXMakeFriendAPI.swift in Sources */,
+				5C2E487C22E5844700B3FBA3 /* XXXFansListViewController.swift in Sources */,
 				5C1A7A0F22DF097000C1C5B9 /* ViewController.swift in Sources */,
 				5C1A7A0D22DF097000C1C5B9 /* AppDelegate.swift in Sources */,
+				5CE083A522EEC94700497103 /* XXXReactorKitViewController.swift in Sources */,
+				5C1A7A2F22DF0A6900C1C5B9 /* BaseTableViewController.swift in Sources */,
+				5C2E487A22E54CFC00B3FBA3 /* EaseCommand.swift in Sources */,
+				5C2E488022E5BC5200B3FBA3 /* NetworkAdapter.swift in Sources */,
+				5C2E488422E6A7F000B3FBA3 /* EaseUserDefault.swift in Sources */,
+				5CE0838E22E9940900497103 /* XXXCollectionKitViewController.swift in Sources */,
+				5C1A7A2D22DF0A4900C1C5B9 /* BaseViewController.swift in Sources */,
+				5C2E488622E6CF4400B3FBA3 /* XXXMakeFriendModel.swift in Sources */,
+				5C3C494B22E09105001776DF /* EaseNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +518,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -358,11 +582,13 @@
 		};
 		5C1A7A2722DF097200C1C5B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06032D7EA07F242FE5D11AF5 /* Pods-EaseSwiftFrameWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LL7GM42E2F;
 				INFOPLIST_FILE = EaseSwiftFrameWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,17 +596,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.suzhouskynet.EaseSwiftFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5C1A7A2822DF097200C1C5B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EAF2C5191A691D32E4ABDC0 /* Pods-EaseSwiftFrameWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LL7GM42E2F;
 				INFOPLIST_FILE = EaseSwiftFrameWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,12 +616,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.suzhouskynet.EaseSwiftFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		5C1A7A2A22DF097200C1C5B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA4B27299AD7FA8DC1485BDD /* Pods-EaseSwiftFrameWorkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +644,7 @@
 		};
 		5C1A7A2B22DF097200C1C5B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DAF0EC77F2DB2E178129D73 /* Pods-EaseSwiftFrameWorkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
