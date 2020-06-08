@@ -76,13 +76,13 @@ class XXXReactorKitViewController: BaseViewController,View {
         // Do any additional setup after loading the view.
     }
     
-    ///在这里将view中的控件动作进行绑定转换
+    /// 在这里将view中的控件动作进行绑定转换
     func bind(reactor: XXXViewReactor) {
         
         // Action，实现View到Reactor的转换
         plus.rx.tap
-            .map { Reactor.Action.increase }///将点击的操作转化成Action的increase
-            .bind(to: reactor.action)///将action绑定到
+            .map { Reactor.Action.increase }/// 将点击的操作转化成Action的increase
+            .bind(to: reactor.action)/// 将action绑定到
             .disposed(by: disposeBag)
         
         minus.rx.tap

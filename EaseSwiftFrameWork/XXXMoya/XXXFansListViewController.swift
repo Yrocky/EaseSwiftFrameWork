@@ -54,13 +54,13 @@ class XXXFansListViewController: BaseTableViewController {
 
 extension XXXFansListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.showCities.count
         return self.dataSource.count
+        return self.showCities.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClass: UITableViewCell.self)
-        cell.textLabel?.text = self.showCities[indexPath.row]
-//        cell.textLabel?.text = self.dataSource[indexPath.row].name
+//        cell.textLabel?.text = self.showCities[indexPath.row]
+        cell.textLabel?.text = self.dataSource[indexPath.row].name
         return cell
     }
     
@@ -154,6 +154,7 @@ extension XXXFansListViewController {
                 self.endRefresh()
             }) { (error) in
                 print("[network][error]\(error)")
+                self.endRefresh()
             }
         }
     }

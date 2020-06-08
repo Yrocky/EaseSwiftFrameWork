@@ -43,7 +43,7 @@ final class XXXViewReactor: Reactor {
         )
     }
     
-    ///实现 action 到 mutate的变化
+    //实现 action 到 mutate的变化
     func  mutate(action: XXXViewReactor.Action) -> Observable<XXXViewReactor.Mutation> {
         
         guard !self.currentState.isLoading else { return .empty() }
@@ -67,7 +67,7 @@ final class XXXViewReactor: Reactor {
         }
     }
     
-    ///实现 mutate 到 state 的变化
+    //实现 mutate 到 state 的变化
     func reduce(state: XXXViewReactor.State, mutation: XXXViewReactor.Mutation) -> XXXViewReactor.State {
      
         // state是旧状态

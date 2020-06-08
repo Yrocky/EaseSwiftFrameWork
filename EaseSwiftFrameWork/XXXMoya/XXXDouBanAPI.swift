@@ -99,7 +99,7 @@ extension DouBan : NetworkTargetType {
         return nil
     }
     
-    
+    /// 自己加的协议内容，用于过滤数据
     public func requestCompleteFilter(moyaResponse: Response, response: Any?) -> Any? {
         
         switch self {

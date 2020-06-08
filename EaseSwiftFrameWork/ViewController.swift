@@ -11,6 +11,9 @@ import RxSwift
 import RxCocoa
 import EasyAnimation
 
+class DemoCell: UITableViewCell, Reusable {
+    
+}
 
 struct XXXRouter {
     var title: String?
@@ -30,9 +33,13 @@ class ViewController: BaseTableViewController {
         title = "Root"
         
         routers.append(contentsOf: [
+            XXXRouter(title: "Combine", destion: XXXCombineViewController.self),
             XXXRouter(title: "Moya", destion: XXXFansListViewController.self),
             XXXRouter(title: "CollectionKit", destion: XXXCollectionKitViewController.self),
             XXXRouter(title: "ReactorKit", destion: XXXReactorKitViewController.self),
+            XXXRouter(title: "RxSwift", destion: XXXRxSwiftViewController.self),
+            XXXRouter(title: "Codable", destion: XXXCodableViewController.self),
+            XXXRouter(title: "CollectionView", destion: XXXCollectionViewController.self),
         ])
         tableView.register(cellWithClass: UITableViewCell.self)
         
@@ -55,7 +62,10 @@ class ViewController: BaseTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = routers[indexPath.row].destion.init()
+        let router = routers[indexPath.row];
+        
+        let vc = router.destion.init()
+        vc.title = router.title
         navigationController?.pushViewController(vc, animated: true)
     }
     
