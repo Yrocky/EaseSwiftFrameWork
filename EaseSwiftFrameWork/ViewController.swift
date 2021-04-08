@@ -10,6 +10,70 @@ import UIKit
 import RxSwift
 import RxCocoa
 import EasyAnimation
+struct Stack<E> {
+
+    fileprivate var array = [E]()
+
+    init() {}
+    
+    init(with array: [E]) {
+        self.array = array
+    }
+    
+    var isEmpty: Bool {
+        array.isEmpty
+    }
+    
+    var top: E? {
+        array.last
+    }
+    
+    mutating func push(_ element: E) {
+       array.append(element)
+    }
+    
+    mutating func pop() -> E? {
+        array.popLast()
+    }
+}
+
+struct MinStack<E: Comparable> {
+
+    var mainStack = Stack<E>()
+    var minStack = Stack<E>()
+    
+    var isEmpty: Bool { mainStack.isEmpty }
+    
+    mutating func push(_ element: E) {
+    
+        mainStack.push(element)
+    
+        if let minStackTop = minStack.top {
+           if element <= minStackTop {
+               minStack.push(element)
+           }
+        } else {
+            minStack.push(element)
+        }
+    }
+    
+    mutating func pop() -> E? {
+        
+        if isEmpty { return nil }
+        
+        let mainStackTop = mainStack.pop()
+        let minStackTop = minStack.top
+                
+        if mainStackTop == minStackTop { minStack.pop() }
+        
+        return mainStackTop
+    }
+    
+    func min() -> E? {
+        return minStack.top
+    }
+}
+
 
 class DemoCell: UITableViewCell, Reusable {
     
@@ -33,6 +97,10 @@ class ViewController: BaseTableViewController {
         title = "Root"
         
         routers.append(contentsOf: [
+            XXXRouter(
+                title: "CompositionalLayout",
+                destion: XXXCompositionalLayoutViewController.self
+            ),
             XXXRouter(title: "Combine", destion: XXXCombineViewController.self),
             XXXRouter(title: "Moya", destion: XXXFansListViewController.self),
             XXXRouter(title: "CollectionKit", destion: XXXCollectionKitViewController.self),
@@ -61,21 +129,51 @@ class ViewController: BaseTableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        tableView.deselectRow(at: indexPath, animated: true)
-        let router = routers[indexPath.row];
+        onButton()
         
-        let vc = router.destion.init()
-        vc.title = router.title
-        navigationController?.pushViewController(vc, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+//        let router = routers[indexPath.row];
+//
+//        let vc = router.destion.init()
+//        vc.title = router.title
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func onButton() {
 
-        UIView.animate(withDuration: 2.0, animations: {
-            self.displayView.layer.position.x = 200.0
-        }) { _ in
-            self.displayView.layer.position.x = 300
+        
+        var mainStack = Stack(with: [4,1,3,7,9,2,11,6,1])
+
+        var sortedStack = Stack<Int>()
+
+        while !mainStack.isEmpty {
+            
+            let mainStackTop = mainStack.pop()!
+            
+            if let sortedStackTop = sortedStack.top {
+                
+                if sortedStackTop < mainStackTop {
+                    
+                    while let sortedTop = sortedStack.top,
+                          sortedTop < mainStackTop {
+                        if let top = sortedStack.pop() {
+                            mainStack.push(top)
+                        }
+                    }
+                }
+            }
+            sortedStack.push(mainStackTop)
         }
+
+        while !sortedStack.isEmpty {
+            print("\(sortedStack.pop())")
+        }
+        
+//        UIView.animate(withDuration: 2.0, animations: {
+//            self.displayView.layer.position.x = 200.0
+//        }) { _ in
+//            self.displayView.layer.position.x = 300
+//        }
 //        UIView.animate(duration: 2.0, animations: {
 //            self.displayView.layer.position.x = 200.0
 //        })
